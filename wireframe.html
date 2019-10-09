@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
     <title>Missing Stories Form Wireframe</title>
 </head>
 <body>
@@ -42,6 +47,72 @@
                 </div>
             </div>
         </div> 
+        <!--Date of disappearance-->
+        <div class="row">
+            <div class="col-md-2">
+                <p>Last seen on</p>
+            </div> 
+            <!--Month selector-->
+            <div class="col-md-1">
+                <div class="form-group">
+                    <select class="form-control">
+                        <option selected>MM</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                </div> 
+            </div>
+            <!--Day selector-->
+            <div class="col-md-1">
+                <div class="form-group">
+                    <select class="form-control">
+                        <option selected>DD</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                </div> 
+            </div>
+            <!--Add time field + AM/PM-->
+        </div>
         <!--Height option-->
         <div class="row">
             <div class="col-md-2">
@@ -198,6 +269,17 @@
                 </div> 
             </div> 
         </div>
+        <!--Hair color-->
+        <div class="row">
+                <div class="col-md-2">
+                    <p>Hair color / style</p>
+                </div>
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Please input hair color and style">
+                    </div>
+                </div>
+        </div>
         <!--Eye color-->
         <div class="row">
             <div class="col-md-2">
@@ -225,7 +307,7 @@
                 <div class="col-md-2">
                     <p>Clothes</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-7">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Please describe">
                     </div>
@@ -234,12 +316,16 @@
         <!--place of disappearance-->
         <div class="row">
             <div class="col-md-2">
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Last seen at</label>
-                </div>
+                <p>Last seen at</p>
             </div>
             <div class="col-md-7">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Enter location"></textarea>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Insert city, address and/or zip" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Locate</button>
+                    </div>
+                </div>
+                        
             </div>
         </div>
         <!--Media-->
@@ -280,102 +366,11 @@
                 </div>
             </div>
         </div>
-        <!--Date of disappearance-->
-        <div class="row">
-            <div class="col-md-2">
-                <p>Last seen on</p>
-            </div> 
-            <!--Month selector-->
-            <div class="col-md-1">
-                <div class="form-group">
-                    <select class="form-control">
-                        <option selected>MM</option>
-                        <option>01</option>
-                        <option>02</option>
-                        <option>03</option>
-                        <option>04</option>
-                        <option>05</option>
-                        <option>06</option>
-                        <option>07</option>
-                        <option>08</option>
-                        <option>09</option>
-                        <option>10</option>
-                        <option>11</option>
-                        <option>12</option>
-                    </select>
-                </div> 
-            </div>
-            <!--Day selector-->
-            <div class="col-md-1">
-                <div class="form-group">
-                    <select class="form-control">
-                        <option selected>DD</option>
-                        <option>01</option>
-                        <option>02</option>
-                        <option>03</option>
-                        <option>04</option>
-                        <option>05</option>
-                        <option>06</option>
-                        <option>07</option>
-                        <option>08</option>
-                        <option>09</option>
-                        <option>10</option>
-                        <option>11</option>
-                        <option>12</option>
-                        <option>13</option>
-                        <option>14</option>
-                        <option>15</option>
-                        <option>16</option>
-                        <option>17</option>
-                        <option>18</option>
-                        <option>19</option>
-                        <option>20</option>
-                        <option>21</option>
-                        <option>22</option>
-                        <option>23</option>
-                        <option>24</option>
-                        <option>25</option>
-                        <option>26</option>
-                        <option>27</option>
-                        <option>28</option>
-                        <option>29</option>
-                        <option>30</option>
-                        <option>31</option>
-                    </select>
-                </div> 
-            </div>
-            <!--year selector-->
-            <div class="col-md-2">
-                <div class="form-group">
-                    <select class="form-control">
-                        <option selected>YYYY</option>
-                        <option>2019</option>
-                        <option>2018</option>
-                        <option>2017</option>
-                        <option>2016</option>
-                        <option>2015</option>
-                        <option>2014</option>
-                        <option>2013</option>
-                        <option>2012</option>
-                        <option>2011</option>
-                        <option>2010</option>
-                        <option>2009</option>
-                        <option>2008</option>
-                        <option>2007</option>
-                        <option>2006</option>
-                        <option>2005</option>
-                        <option>2004</option>
-                        <option>2003</option>
-                        <option>2002</option>
-                    </select>
-                </div> 
-            </div>
-        </div>
         <!--Abductor information headline-->
         <div class="row">
             <div class="col-md-8">
                 <br>
-                <h3>Abductor Information</h3>
+                <h3>Possible Abductor Information</h3>
                 <br>
             </div>
         </div>
@@ -449,6 +444,17 @@
                     </select>
                 </div> 
             </div>
+        </div>
+        <!--Hair color-->
+        <div class="row">
+                <div class="col-md-2">
+                    <p>Hair color / style</p>
+                </div>
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Please input hair color and style">
+                    </div>
+                </div>
         </div>
         <!--Eye color-->
         <div class="row">
@@ -532,6 +538,21 @@
                 </div>
             </div>
         </div>
+        <!--Last seen at-->
+        <div class="row">
+            <div class="col-md-2">
+                <p>Last seen at</p>
+            </div>
+            <div class="col-md-7">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Insert city, address and/or zip" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2 locate-button-2">Locate</button>
+                    </div>
+                </div>
+                        
+            </div>
+        </div>
         <!--contact information headline-->
         <div class="row">
             <div class="col-md-8">
@@ -540,25 +561,73 @@
                 <br>
             </div>
         </div>
-        <!--Name row-->
+        <!--Latest update-->
         <div class="row">
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="First name">
-                    </div>
+            <div class="col-md-2">
+                <p>Latest update</p>
+            </div>
+            <div class="col-md-6">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Additional notes"></textarea>
+            </div>
+        </div>
+        <!--Local authorities details row-->
+        <div class="row">
+            <div class="col-md-2">
+                <p>Local authorities details</p>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter police precinct details ">
                 </div>
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Last name">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Phone number">
-                    </div>
-                </div>
+            </div>
         </div> 
+        <!--Contact person details-->
+        <div class="row">
+            <div class="col-md-2">
+                <p>Contact Person</p>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+        </div>
+        <!--SUBMIT BUTTON-->
+        <div class="row">
+            <div class="col-9">
+                    <br><br><br>
+                    <button type="button" class="btn btn-primary btn-lg btn-block submit-button" id="submit-info-button">Submit</button>
+            </div>
+        </div>
     </div>
-    
+    <br><br><br>
+      
+      <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+     </div>
+    </div>
+
+<script src="./javascript/function.js"></script> 
 </body>
 </html>
