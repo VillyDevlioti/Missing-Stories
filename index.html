@@ -14,7 +14,7 @@
     <title>Missing Stories Form Wireframe</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="myForm">
         <!--Missing stories headline-->
         <div class="row">
             <div class="col-md-8">
@@ -608,25 +608,39 @@
     <br><br><br>
       
       <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade bd-example-modal-xl" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Preview and Settings</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4-md">
+                                <p>targeting radius</p>
+                                <p>radio button for audience choice</p>
+                                <p>budget</p>
+                                <p>duration</p>
+                            </div>
+                            <div class="col-2-md"></div>
+                            <div class="col-8-md">
+                                <img src="images/missing-kid-preview.png"/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel and close</button>
+                    <button type="button" class="btn btn-primary">Submit to Facebook Ads</button>
                 </div>
             </div>
+        </div>
      </div>
-    </div>
+
 
 <script src="./javascript/function.js"></script> 
 </body>
