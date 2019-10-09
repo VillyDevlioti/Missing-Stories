@@ -600,14 +600,15 @@
         <!--SUBMIT BUTTON-->
         <div class="row">
             <div class="col-9">
-                    <br><br><br>
-                    <button type="button" class="btn btn-primary btn-lg btn-block submit-button" id="submit-info-button">Submit</button>
+                <br><br><br>
+                <button type="button" class="btn btn-primary btn-lg btn-block submit-button" id="save-as-draft" style="background-color: grey;">Save as draft</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block submit-button" id="submit-info-button">Next Page</button>
             </div>
         </div>
     </div>
     <br><br><br>
       
-      <!-- Modal -->
+    <!-- Modal -->
     <div class="modal fade bd-example-modal-xl" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
@@ -622,24 +623,47 @@
                         <div class="row">
                             <div class="col-4-md">
                                 <p>targeting radius</p>
-                                <p>radio button for audience choice</p>
-                                <p>budget</p>
+                                <p>Targeting</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Everyone (default)
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        Other targeting
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                                    <label class="form-check-label" for="exampleRadios3">
+                                        Other targeting
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="formControlRange">Budget Range</label>
+                                    <input type="range" class="form-control-range" id="formControlRange" data-toggle="tooltip" data-placement="top" >
+                                </div>
+                            </div>
                                 <p>duration</p>
                             </div>
-                            <div class="col-2-md"></div>
-                            <div class="col-8-md">
+                            <div class="col-8">
                                 <img src="images/missing-kid-preview.png"/>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel and close</button>
-                    <button type="button" class="btn btn-primary">Submit to Facebook Ads</button>
-                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel and close</button>
+                        <button type="button" class="btn btn-primary">Submit to Facebook Ads</button>
+                    </div>
             </div>
         </div>
-     </div>
+    </div>
 
 
 <script src="./javascript/function.js"></script> 
