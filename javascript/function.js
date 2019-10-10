@@ -5,11 +5,9 @@ $(document).ready(function() {
             keyboard: false
           });
           var values = {};
-  
-    $.each($('#myForm').serializeArray(), function(i, field) {
-    values[field.name] = field.value;
     });
-
-});
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 
 });
