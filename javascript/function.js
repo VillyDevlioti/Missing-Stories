@@ -6,8 +6,7 @@ $(document).ready(function() {
           });
           var values = {};
     });
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+    $('#budget-range').tooltip('show');
+    console.log("tooltip shows");
 
 });

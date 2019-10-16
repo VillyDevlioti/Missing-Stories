@@ -613,60 +613,75 @@
         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Preview and Settings</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Preview and Targeting Settings</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8">
-                            <p>Targeting</p>
+                        <div class="col-1"></div>
+                        <div class="col-4">
+                            <h5>Gender</h5>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                                 <label class="form-check-label" for="exampleRadios1">
-                                    Everyone (default)
+                                    All genders (default)
                                 </label>
-                                </div>
-                                <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                <label class="form-check-label" for="exampleRadios2">
-                                    Other targeting
-                                </label>
-                                </div>
-                                <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-                                <label class="form-check-label" for="exampleRadios3">
-                                    Other targeting
-                                </label>
-                                </div>
                             </div>
-                        </div>
-                    <div class="row"> 
-                        <div class="col-2"></div>
-                        <div class="col-8">
+                            <br>
+                            <h5>Age</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    13+ (default)
+                                </label>
+                            </div>
+                            <br>
+                            <h5>Languages</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    English (default)
+                                </label>
+                            </div>
+                            <br>
+                            <h5>Placement</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Instagram Stories (default)
+                                </label>
+                            </div>
+                            <br>
+                            <h5>Objective</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Reach (default)
+                                </label>
+                            </div>
+                            <br>
+                            <h5>Delivery Type</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Accelerated (default)
+                                </label>
+                            </div>
                             <div class="form-group">
                                 <br>
-                                    <label for="formControlRange">Budget Range</label>
-                                    <input type="range" class="form-control-range" id="formControlRange" data-toggle="tooltip" data-placement="top" >
-                                </div>
-                        </div>
-        
-                    </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8">
+                                <label for="formControlRange">Budget Range</label>
+                                <input type="range" class="form-control-range" id="budget-range" data-toggle="tooltip" data-placement="top" data-slider-min="100" data-slider-max="5000" data-slider-step="50" data-slider-value="2500" >
+                            </div>
                             <div class="form-group">
                                 <br>
-                                    <label for="formControlRange">Duration</label>
-                                    <input type="range" class="form-control-range" id="formControlRange" data-toggle="tooltip" data-placement="top" >
+                                <label for="formControlRange">Duration</label>
+                                <input type="range" class="form-control-range" id="days-ranges" data-toggle="tooltip" data-placement="top" data-slider-min="1" data-slider-max="24" data-slider-step="1" data-slider-value="12" >
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8">
+                        <div class="col-1"></div>
+                        <div class="col-4" style="padding-left: 10%;">
                             <img src="images/missing-kid-preview.png">
                         </div>
                     </div>
@@ -677,7 +692,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
+
+    <!-- Modal -->
 
 
 <script src="./javascript/function.js"></script> 
